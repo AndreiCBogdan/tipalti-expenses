@@ -16,6 +16,8 @@ async function fetchExpenses() {
       throw new Error('Network response was not ok');
     }
 
+    // data validation here?
+
     return await response.json();
   } catch (error) {
     if (error instanceof Error) {
